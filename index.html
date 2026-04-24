@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Premier site</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+ 
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/1firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/1firebase-auth-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/10.7.1/1firebase-firestore-compat.js"></script>
+
+      <canvas id="bg"></canvas>
+
+    <div class="topbar">
+      <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+      <h2>Mon site</h2>
+    </div>
+     <div class="sidebar">
+        <h2>MonSite</h2>
+        <button onclick="showSection('acceuil')">Acceuil</button>
+        <button onclick="showSection('apropos')">A propos</button>
+        <button onclick="showSection('services')">Services</button>
+        <button onclick="showSection('contact')">Contact</button>
+        </div>
+
+   <main class="content"> 
+  <section id="acceuil" class="section active hero">
+     <div class="hero-box">
+      <img src="images/DK.jpg" class="profil-img" alt="Ma photo">
+    <h1>Irès Gauthier KOUMONDJI</h1>
+    <h2>Développeur web</h2>
+    <P>Création de sites web modernes, application et solution digitales.</P>
+     </div>
+  </section>
+
+  <section id="apropos" class="section">
+    <h1>A propos</h1>
+    <p>Je suis Irès Gauthier KOUMONDJI, étudiant en licence de système informatique et logicièl à ESM Bénin et en anglais à l'UAC. Natif de Comè Kpablè, je réside à Abomey-Calavi ou je m'y plais bien.Je suis un développeur web passionné par la création des sites modernes et performants. En plus, je suis un programmeur passionné également par la cybersécurité, assuré la protection des données de mes clients: une importante tâche nécessitant des niveaux de compétences.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h1>Services</h1>
+    <p>Création de sites web</p>
+    <p>Création d'application mobile</p>
+    <p>cybersécurité</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h1>Contact</h1>
+        <p>Appel : +229 01 97 46 89 72 ; +229 01 44 13 60 13</p>
+        <p>WhatsApp : +229 01 97 46 89 72</p>
+        <p>Email:iresgauthierkoumondji06@gmail.com</p>
+  </section>
+   
+  <footer>
+    <p>@ 2026 Mon site Tous droits réservés </p>
+  </footer>  
+ <script src="script.js"></script>   
+</body>
+</html>
